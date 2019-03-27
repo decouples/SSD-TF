@@ -209,11 +209,11 @@ def main(_):
 
             saver.restore(sess, get_checkpoint())
 
-            np_image = imread('./demo/test.jpg')
+            np_image = imread('./test-data/test.jpg')
             labels_, scores_, bboxes_ = sess.run([all_labels, all_scores, all_bboxes], feed_dict = {image_input : np_image, shape_input : np_image.shape[:-1]})
 
             img_to_draw = draw_toolbox.bboxes_draw_on_img(np_image, labels_, scores_, bboxes_, thickness=2)
-            imsave('./demo/test_out.jpg', img_to_draw)
+            imsave('./test-data/test_out.jpg', img_to_draw)
 
 if __name__ == '__main__':
   tf.logging.set_verbosity(tf.logging.INFO)
