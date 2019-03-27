@@ -9,10 +9,8 @@ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar  
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar  
 ```
-------
-------
 
-	```
+	
 	VOCROOT/
 		   |->VOC2007/
 		   |    |->Annotations/
@@ -25,7 +23,7 @@ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar
 		   |->VOC2007TEST/
 		   |    |->Annotations/
 		   |    |->...
-	```
+	
 	VOCROOT is your path of the Pascal VOC Dataset.
 
 - Run the following script to generate TFRecords.
